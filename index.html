@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Plans and action </title>
+	<link rel="stylesheet"type="text/css"href="style.css">
+</head>
+<body>
+<section>
+	<img src="stars.png" id="stars">
+	<img src="moon.png" id="moon">
+	<img src="mountains_behind.png" id="mountain_behind">
+	<h2 id="text">PLans and Action</h2>
+	<a href="#sec"id="btn">Explore</a>
+	<img src="mountains_front.png" id="mountains_front">
+</section>
+<div  class="sec" id="sec">
+	<h2>My plans & Action</h2>
+	<p>My goal is to do the right things at the right time to finish without any problems and not rush to pass the task. I'm going to create a plan chart or goal chart so I can get things done on time. It also helps me to get up early and sleep because all the tasks scheduled are done, and I will also have time for myself and my family. I'm trying to improve my learning I'll take notes for recitations and questions so I can answer them when I'm asked. These plans can help us in the future. Listen carefully to the instructor to understand what is being taught. Review notes for upcoming exams, quizzes, activities, recitations, and so on. I'm the only one who understands it and it's easier to learn.Make studying less overwhelming by condensing notes from class. Underline or highlight key words. Create visual aids like charts, story webs, mind maps, or outlines to organize and simplify information and help you remember better. Study with a group.</p><br><br><h2>Actions That I will do</h2>
+	<p><br><br>
+		1. Pick a place and time<br><br>
+		Set up your study space – Your study space should be quiet, comfortable and distraction-free. It should make you feel happy and inspired. Decorate it with your favourite pictures or objects. If you want to listen to music or burn incense, pick a space that lets you do that.<br><br>
+Find your best time – Some people work better in the morning. Others work better at night. Work out which time suits you and plan to study then. Don't study much later than your usual bedtime – pushing yourself late at night can make you too tired to study properly.<br><br><br>
+2. Plan your time<br><br>
+Set alarms – Set alarms to remind you about your study plans. A regular reminder keeps you honest and your plans on track.<br><br>
+Use a wall planner – Stick a calendar or wall planner up so you can see it whenever you're studying. Mark it up with important dates, like exams and assignment due dates. Use it to block out your regular study timetable too.<br><br>
+Make to-do lists – Lists break tasks down into manageable chunks. At the start of the week, make a list of the things that you need to have done by the end of the week. Make a to-do list at the start of each study session too, so that you're clear about what you need to be doing with your time. <br><br>
+Set time limits – Before you start your study session, have a look at your to-do list and give yourself a set time to spend on each task. If you don't get something done in the set time, consider whether it's the best use of your time to keep going with it, or to start working on something else.<br><br><br>
+
+3.Discover your learning style<br><br>
+Most of us have a preferred way of learning. Get to know the learning style you're most comfortable with and study in the ways you learn best.<br><br>
+
+Note that these styles are just a way to think about diffent studying techniques – they're not hard and fast rules that say you should only study in one way. Try each of these out and see which ways you prefer.<br><br>
+
+Auditory learners prefer to learn by listening. Try reading your notes aloud and discussing them with other people. You might like to record key points and play them back.<br><br>
+Visual learners prefer to learn by seeing. Try using colours in your notes and draw diagrams to help represent key points. You could try to remember some ideas as images.<br><br>
+Tactile/kinesthetic learners prefer to learn by doing. Try using techniques like role-playing or building models to revise key points.<br><br><br>
+4.Review and revise<br><br>
+At least once a week you should go back over the things you've studied in class. Thinking things over can help you to understand the concepts and help you remember when you need them the most.<br><br>
+
+Quiz – Get a friend or family member to quiz you on key concepts. Offer to help your friends with their work too. Quizzes are great ways to get confident about what you know and find out what you still need to learn.<br><br>
+Make your own study materials – Think up some practice exam questions or create your own flash cards to help you study. This way you learn it all twice: once when you make the study materials and once when you use them to revise.<br><br><br>
+5.Take breaks<br><br>
+It's important to take breaks while you're studying, especially if you're feeling tired or frustrated. Working too long on a task can actually decrease your performance.<br><br>
+
+When you take a break, make sure you get away from your desk or study space. A bit of physical – even just a walk around the block – can sometimes help you to look at a problem in a different way and could even help you to solve it.<br><br><br>
+6.Ask for help<br><br>
+If you're stuck on something, or something just doesn't seem to make sense, you can always ask for help. Talk to your teachers or lecturers about the things you don't understand. Talk to your friends and fellow students too.<br><br><br>
+7.Stay motivated<br><br>
+
+When you're studying it helps to keep in mind your reasons for doing all this hard work, like a course or career you're working towards. It can help to have something in your study space to remind you of your goals.<br><br>
+
+You could also decorate your study space with inspirational quotes or photos of people you admire and family members you want to make proud of you.<br><br><br>
+8.Look after yourself<br><br>
+You’ll study better if you take care of yourself. Make sure you eat well and get enough sleep and physical exercise. Don't reward yourself with too many sugary or fatty snacks or push yourself to study late into the night. It’s also a good idea to make sure you drink lots of water when you’re studying.<br><br>
+
+
+<a href="#">
+<button type="button">Next</button>
+</a>
+
+
+	</p>
+</div>
+</div>
+<div>
+	
+
+<script>
+	let stars = document.getElementById('stars');
+	let moon = document.getElementById('moon');
+	let mountain_behind = document.getElementById('mountain_behind');
+	let text = document.getElementById('text');
+	let btn = document.getElementById('btn');
+	let mountains_front = document.getElementById('mountains_front');
+
+	window.addEventListener('scroll', function(){
+		let value = window.scrollY;
+		stars.style.Left = value * 0.25 + 'px';
+		moon.style.top = value * 1.05 + 'px';
+		mountain_behind.style.top = value * 0.5 + 'px';
+		mountains_front.style.top = value * 0 + 'px';
+		text.style.marginRight = value * 4 + 'px';
+		text.style.marginTop = value * 1.5 + 'px';
+		btn.style.marginTop = value * 1.5 + 'px';
+		})
+</script>
+</body>
+</html>
